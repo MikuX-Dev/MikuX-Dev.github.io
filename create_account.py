@@ -30,7 +30,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             "name": username,
             "email": email,
             "password": password,
-            "ref": "YOUR_REFERRAL_LINK_HERE"
+            "ref": "https://mega.nz/C!lrRHnQxa"
         }
 
         response = requests.post(request_url, data=data)
