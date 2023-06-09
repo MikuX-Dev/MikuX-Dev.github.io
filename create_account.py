@@ -25,10 +25,12 @@ class RequestHandler(BaseHTTPRequestHandler):
         api_url = "https://api.mega.co.nz/"
         request_url = api_url + "user/register"
 
+        # Include the referral link in the request payload
         data = {
             "name": username,
             "email": email,
-            "password": password
+            "password": password,
+            "ref": "YOUR_REFERRAL_LINK_HERE"
         }
 
         response = requests.post(request_url, data=data)
