@@ -1,4 +1,4 @@
-![_traichu](favicon-32x32.png?raw=true)
+![_traichu](src/pictures/favicon-32x32.png?raw=true)
 
 > **_trai´chu,** _n_. A simple, semantic start page built with HTML, CSS, and a mouse-sized bit of JavaScript.
  
