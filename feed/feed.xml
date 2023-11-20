@@ -5,30 +5,12 @@
 	
 	<link href="https://thelinuxcast.org/feed/feed.xml" rel="self"/>
 	<link href="https://thelinuxcast.org/"/>
-	<updated>2023-04-25T00:00:00Z</updated>
+	<updated>2023-04-12T00:00:00Z</updated>
 	<id>https://thelinuxcast.org/</id>
 	<author>
 		<name>Matt</name>
 		<email>email@thelinuxcast.org</email>
 	</author>
-	
-	<entry>
-		<title>An Obsession With Gruvbox</title>
-		<link href="https://thelinuxcast.org/posts/An%20Obsession%20With%20Gruvbox/"/>
-		<updated>2023-04-25T00:00:00Z</updated>
-		<id>https://thelinuxcast.org/posts/An%20Obsession%20With%20Gruvbox/</id>
-		<content type="html">&lt;p&gt;How many people do you think could write a blog post about their obsession with a color scheme? Well, you know at least one, because that is what I&#39;m about to do. Now, I have in fact made a &lt;a href=&quot;https://www.youtube.com/watch?v=uWjNQbhGz4E&quot;&gt;video&lt;/a&gt; about it already. I have considered making another video about it.&lt;/p&gt;
-&lt;p&gt;I love Gruvbox that much.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://thelinuxcast.org/img/gruvbox.png&quot;&gt;&lt;img src=&quot;https://thelinuxcast.org/img/gruvbox.png&quot; alt=&quot;Gruvbox&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The funniest thing is that I didn&#39;t used to like it at all. Brown isn&#39;t really my color, neither is orange for that matter, and when I saw it for the first time I was not impressed. I thought it quite ugly, to be honest. But then I decided to try it and since then it has become my all time favorite color scheme. It&#39;s not even really all that close. Sure, I use others (Everforest, catppuccin and moonfly to name a few), but Gruvbox is the one that I keep coming back to and the one I usually end up sticking on the longest without switching.&lt;/p&gt;
-&lt;p&gt;I can&#39;t sit here and name technical reasons why Gruvbox is better. I have friends in the Linux community that hate it, I have friends that love it just as much as I do. But there is something about these colors that just go together so well. The contrast is wonderful, making it supremely readable, and it&#39;s just colorful enough that it isn&#39;t boring.&lt;/p&gt;
-&lt;p&gt;So many themes these days are based on Nord and OneDark. Both are so boring and samey. How many bloody shades of blue can you get? Boring, I tell you. And the oddest thing about those two themes is that there are so many forks of them. Like making one little change to adjust the hue of one of the shades of blue is going to make a ton of difference. Don&#39;t get me wrong, people like what they like and that&#39;s the way it should be, but I cry a little inside when I see so many people using the same four shades of OneDark. It&#39;s sad and depressing. Gruvbox is so much better.&lt;/p&gt;
-&lt;p&gt;Granted, I know it&#39;s not for everyone, but it is really just so good. I think if more people gave it a good try, they&#39;d find that it was better than they thought. I&#39;m not so sure that this applies to the light theme, but I don&#39;t like light themes in general, so nothing is going to change my mind there.&lt;/p&gt;
-&lt;p&gt;A pointless blog post? Yes. But, Gruvbox is awesome, and I&#39;ll fight anyone who says otherwise. Not really, but the idea was good. Anyways, time to take my tired ass to bed, obviously sleep deprivation is not good for solid blog post ideas, who knew?&lt;/p&gt;
-&lt;p&gt;If you&#39;re reading this on the website, you can get all of my blog posts early by supporting me on &lt;a href=&quot;https://patreon.com/thelinuxcast&quot;&gt;Patreon&lt;/a&gt;. Hope everyone has a great week,&lt;/p&gt;
-&lt;p&gt;Matt&lt;/p&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>Redcore is a Bit Boring</title>
