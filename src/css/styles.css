@@ -108,7 +108,7 @@ aside svg { height: 4.5rem; }
 #dock li:nth-child(4) a:focus,
 #dock li:nth-child(4) a:hover { fill: var(--primary-link-hover-color); } /* Notion */
 #dock li:nth-child(5) a:focus,
-#dock li:nth-child(5) a:hover { fill: hsl(102, 53%, 52%); } /* Github */
+#dock li:nth-child(5) a:hover { fill: var(--primary-link-hover-color); } /* Github */
 #dock li:nth-child(6) a:focus,
 #dock li:nth-child(6) a:hover { fill: hsl(14, 89%, 53%); } /* Figma */
 
