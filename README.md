@@ -1,34 +1,23 @@
-# [Homepage](https://danggoodcode.com/startpage)
+![_traichu](favicon-32x32.png?raw=true)
 
-![homepage](https://i.redd.it/cbnzq36zj3601.gif)
+> **_trai´chu,** _n_. A simple, semantic start page built with HTML, CSS, and a mouse-sized bit of JavaScript.
+ 
+**_traichu's** markup is [valid](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftressley.github.io%2F_traichu%2Findex.html) and aims to adhere to HTML semantics. [Traditional Japanese](https://www.nipponcolors.com), [WCAG 2.0](https://www.w3.org/TR/WCAG20/) compliant colors make up the color palette. The monospace font is ol' [Fira Code](https://fonts.google.com/specimen/Fira+Code) loaded via [Google Fonts](https://fonts.google.com). Icons are [inline SVGs](https://css-tricks.com/pretty-good-svg-icon-system/), [DuckDuckGo's API](https://icons.duckduckgo.com/ip3/duckduckgo.com.ico) delivers the favicons, and [OpenWeather's API](https://openweathermap.org) provides the weather forecast and icons. Vanilla JavaScript and CSS handle all interactivity.
 
-## Customization
+[DuckDuckGo](https://duckduckgo.com) is the default search engine because privacy is important 'round here.
 
-### Customize Bookmarks
+⚠️ **You will need to generate your own OpenWeather API key!**
+1. [Register for an OpenWeather account](https://home.openweathermap.org/users/sign_up) (OpenWeather will generate a default API key)
+2. Sign in and navigate to Username > API keys and copy the key
+3. Paste the key into [`line 10`](https://github.com/Tressley/_traichu/blob/3f2d695a4677f2a99c2c112fd11d01d71d6a05e9/js/main.js#L10) of `main.js`
 
-Bookmarks are now held in the `bookmarks.js` file for easy updating. `bookmarks` is an array of objects with a `title` and `links` property. The `title` defines what the header of the "bookmark section" box will be. `link` is an array of link objects each with a name and a url to link to.
+**How to update your city**
+1. Find your city using [OpenWeather's search](https://openweathermap.org/find)
+2. Copy the city ID from the end of the URL
+> `https://openweathermap.org/city/1850147` 🠆 `1850147`
+3. Paste the city ID into [`line 26`](https://github.com/Tressley/_traichu/blob/3f2d695a4677f2a99c2c112fd11d01d71d6a05e9/js/main.js#L26) of `main.js`
 
-> The way the site is currently styled bookmarks should always have a length of `4` if you want to have more sections you need to change the `width` property of the css class `bookmark-set`
 
-### Customize Search Engine
+![_traichu's dark mode](https://i.imgur.com/ncQcCGy.jpg)
 
-You can change the search engine used by the search overlay by updating the url value stored in the `searchUrl` var in `index.html` to the correct string for your engine.
-
-Examples:
-
-- DuckDuckGo: `https://duckduckgo.com/?q=`
-- Bing: `https://www.bing.com/search?q=`
-
-### Customize Styling
-
-Styles are handled through CSS variables. To update the colors you just need to change the variable definitions defined in `:root`.
-
-| Variable           | default                    | description                                                                                                                |
-| ------------------ | -------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `--bg`             | `#5f4b8b`                  | Defines the body background color                                                                                          |
-| `--fg`             | `#ffffff`                  | Defines the primary foreground (text) color for clock, weather, and titles                                                 |
-| `--secondaryFg`    | `#b3b3b3`                  | Defines the foreground (text) color for links                                                                              |
-| `--containerBg`    | `#272727`                  | Defines the background color of the boxes                                                                                  |
-| `--searchBg`       | `--containerBg`            | Defines the background color of the search overlay                                                                         |
-| `--scrollbarColor` | `#3f3f3f`                  | Defines the color of the custom scrollbars                                                                                 |
-| `--fontFamily`     | `"Roboto Mono", monospace` | Defines the font used. To change to a custom font you will also have to import that font from whatever source is available |
+![_traichu's light mode](https://i.imgur.com/Gst8wfz.jpg)
