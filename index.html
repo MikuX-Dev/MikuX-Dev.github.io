@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="src/pictures/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="src/pictures/favicon-16x16.png">
@@ -38,10 +38,28 @@
             <section id="search">
                 <h2 class="sr-only">Search</h2>
                 <form action="https://search.brave.com/" method="get">
-                    <input type="text" id="q" name="q" autocomplete="on" list="search-suggestions" autofocus>
-                    <datalist id="search-suggestions"></datalist>
+                    <input type="text" id="q" name="q" list="suggestions" autofocus>
+                    <datalist id="suggestions"></datalist>
                     <button class="sr-only" tabindex="-1">Search</button>
                 </form>
+                <script>
+                    document.getElementById('q').addEventListener('input', function() {
+                        const input = this.value;
+                        const dataList = document.getElementById('suggestions');
+                        dataList.innerHTML = "";
+                        // Use Google Auto Suggest API to get suggestions
+                        fetch(`https://www.google.com/complete/search?q=${input}&client=firefox`)
+                            .then(response => response.json())
+                            .then(data => {
+                                data[1].forEach(suggestion => {
+                                    const option = document.createElement('option');
+                                    option.value = suggestion;
+                                    dataList.appendChild(option);
+                                });
+                            })
+                            .catch(error => console.error('Error fetching suggestions:', error));
+                    });
+                </script>
             </section>
             <section id="bookmarks">
                 <h2 class="sr-only">Bookmarks</h2>
