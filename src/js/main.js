@@ -1,25 +1,3 @@
-function updateSearchSuggestions(query) {
-	var suggestionsList = document.getElementById('search-suggestions');
-	suggestionsList.innerHTML = '';
-
-	// Use Google Auto Suggestion API to fetch suggestions
-	fetch('https://www.google.com/complete/search?q=' + query)
-			.then(response => response.json())
-			.then(data => {
-					var suggestions = data[1];
-					suggestions.forEach(function(suggestion) {
-							var listItem = document.createElement('li');
-							listItem.textContent = suggestion;
-							suggestionsList.appendChild(listItem);
-					});
-			});
-}
-
-document.getElementById('q').addEventListener('input', function() {
-	var query = this.value;
-	updateSearchSuggestions(query);
-});
-
 function dateTime() {
 	const date = new Date();
 	let today = date.toDateString();
