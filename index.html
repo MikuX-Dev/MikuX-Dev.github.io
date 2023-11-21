@@ -38,28 +38,29 @@
             <section id="search">
                 <h2 class="sr-only">Search</h2>
                 <form action="https://search.brave.com/" method="get">
-                    <input type="text" id="q" name="q" list="suggestions" autofocus>
-                    <datalist id="suggestions"></datalist>
+                    <input type="text" id="q" name="q" placeholder="Search the web privately…" title="Search"  autocomplete="off" spellcheck="false" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="search-suggestions" autofocus>
                     <button class="sr-only" tabindex="-1">Search</button>
                 </form>
-                <script>
-                    document.getElementById('q').addEventListener('input', function() {
-                        const input = this.value;
-                        const dataList = document.getElementById('suggestions');
-                        dataList.innerHTML = "";
-                        // Use Google Auto Suggest API to get suggestions
-                        fetch(`https://www.google.com/complete/search?q=${input}&client=firefox`)
-                            .then(response => response.json())
-                            .then(data => {
-                                data[1].forEach(suggestion => {
-                                    const option = document.createElement('option');
-                                    option.value = suggestion;
-                                    dataList.appendChild(option);
-                                });
-                            })
-                            .catch(error => console.error('Error fetching suggestions:', error));
-                    });
-                </script>
+                <ul id="search-suggestions" role="listbox" aria-label="Search suggestions"></ul>
+            </section>
+            <script>
+                document.getElementById('q').addEventListener('input', function() {
+                    var query = this.value;
+                    var suggestionsList = document.getElementById('search-suggestions');
+                    suggestionsList.innerHTML = '';
+                    // Use Google Auto Suggestion API to fetch suggestions
+                    fetch('https://www.google.com/complete/search?q=' + query)
+                        .then(response => response.json())
+                        .then(data => {
+                            var suggestions = data[1];
+                            suggestions.forEach(function(suggestion) {
+                                var listItem = document.createElement('li');
+                                listItem.textContent = suggestion;
+                                suggestionsList.appendChild(listItem);
+                            });
+                        });
+                });
+            </script>
             </section>
             <section id="bookmarks">
                 <h2 class="sr-only">Bookmarks</h2>

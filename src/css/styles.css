@@ -143,8 +143,8 @@ aside svg { height: 4.5rem; }
         background-image: var(--svg-search-gray);
         border: 0.125rem solid hsl(var(--color-white-hsl) / 0.25);
     }
-    
-    #search input:hover { border-color: hsl(var(--color-white-hsl) / 0.5); }    
+
+    #search input:hover { border-color: hsl(var(--color-white-hsl) / 0.5); }
 
     #bookmarks a:focus,
     #bookmarks a:hover { background-color: hsl(var(--color-white-hsl) / 0.05); }
@@ -156,7 +156,7 @@ aside svg { height: 4.5rem; }
     #search input {
         background-image: var(--svg-search-light-gray);
         border: 0.125rem solid hsl(var(--color-black-hsl) / 0.25);
-    } 
+    }
 
     #search input:hover { border-color: hsl(var(--color-black-hsl) / 0.5); }
 
@@ -217,7 +217,7 @@ aside svg { height: 4.5rem; }
 /*
     Accessible hiding for screen readers
     https://webaim.org/techniques/css/invisiblecontent/#techniques
-*/ 
+*/
 .sr-only {
     height: 1px;
     left: -10000px;
@@ -230,7 +230,7 @@ aside svg { height: 4.5rem; }
 /* Responsive Media Queries */
 @media screen and (min-width: 48em) {
     header { display: flex; }
-    
+
     #traichu {
         padding: 0;
         width: 45rem; /* 720px */
