@@ -37,8 +37,9 @@
             </nav>
             <section id="search">
                 <h2 class="sr-only">Search</h2>
-                <form action="https://search.brave.com/?q=%s" method="get">
-                    <input id="q" type="text" placeholder="Search the web privately…" name="q" autocapitalize="off" autocomplete="on" autocorrect="on" spellcheck="on" aria-label="Search" title="Search" aria-autocomplete="both" aria-haspopup="false" autofocus>
+                <form action="https://search.brave.com/" method="get">
+                    <input type="text" id="q" name="q" autocomplete="on" list="search-suggestions" autofocus>
+                    <datalist id="search-suggestions"></datalist>
                     <button class="sr-only" tabindex="-1">Search</button>
                 </form>
             </section>
