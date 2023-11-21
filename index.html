@@ -43,25 +43,6 @@
                 </form>
                 <ul id="search-suggestions" role="listbox" aria-label="Search suggestions"></ul>
             </section>
-            <script>
-                document.getElementById('q').addEventListener('input', function() {
-                    var query = this.value;
-                    var suggestionsList = document.getElementById('search-suggestions');
-                    suggestionsList.innerHTML = '';
-                    // Use Google Auto Suggestion API to fetch suggestions
-                    fetch('https://www.google.com/complete/search?q=' + query)
-                        .then(response => response.json())
-                        .then(data => {
-                            var suggestions = data[1];
-                            suggestions.forEach(function(suggestion) {
-                                var listItem = document.createElement('li');
-                                listItem.textContent = suggestion;
-                                suggestionsList.appendChild(listItem);
-                            });
-                        });
-                });
-            </script>
-            </section>
             <section id="bookmarks">
                 <h2 class="sr-only">Bookmarks</h2>
                 <ul>
