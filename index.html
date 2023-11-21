@@ -37,33 +37,10 @@
             </nav>
             <section id="search">
                 <h2 class="sr-only">Search</h2>
-                <form action="/search" method="GET" id="searchform" data-sveltekit-reload="" class="svelte-1i8xma6">
-                    <button id="submit-button-hidden" class="svelte-1i8xma6"></button>
-                    <span id="search-icon" class="svelte-1i8xma6">
-                        <svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.57212 13.1442C2.94254 13.1442 0 10.2016 0 6.57173C0 2.94248 2.94268 0 6.57212 0C10.2016 0 13.1442 2.94248 13.1442 6.57173C13.1442 8.05658 12.6519 9.42642 11.8215 10.5269L16.3528 15.0581C16.7103 15.4156 16.7103 15.9952 16.3528 16.3527C15.9953 16.7102 15.4157 16.7102 15.0582 16.3527L10.527 11.8215C9.42657 12.6519 8.05682 13.1442 6.57212 13.1442ZM6.57212 11.2665C3.97956 11.2665 1.87775 9.16463 1.87775 6.57184C1.87775 3.97952 3.97966 1.87775 6.57212 1.87775C9.16458 1.87775 11.2665 3.97952 11.2665 6.57184C11.2665 9.16463 9.16468 11.2665 6.57212 11.2665Z" fill="#C2C4CF">
-                        </path>
-                    </svg>
-                </span>
-                <div class="searchbox-wrapper svelte-1i8xma6">
-                    <input id="searchbox" type="text" class="form-input desktop-large-regular svelte-1i8xma6" placeholder="Search the web privately…" name="q" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Search" title="Search" aria-autocomplete="both" aria-haspopup="false" maxlength="2048" autofocus="">
-                    <div id="clear-query-wrapper" class="svelte-1i8xma6">
-                        <button id="clear-query-button" class="btn svelte-1i8xma6" aria-label="Clear" data-svelte-h="svelte-axkiqb">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="svelte-1i8xma6">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.06834 13.4173C1.68757 13.7981 1.07024 13.7981 0.689477 13.4173C0.308716 13.0365 0.308716 12.4192 0.689477 12.0384L5.67424 7.05368L0.688891 2.06833C0.30813 1.68757 0.30813 1.07023 0.688891 0.68947C1.06965 0.308709 1.68699 0.308709 2.06775 0.68947L7.0531 5.67482L12.0385 0.68938C12.4193 0.308618 13.0366 0.308618 13.4174 0.689379C13.7982 1.07014 13.7982 1.68748 13.4174 2.06824L8.43196 7.05368L13.4168 12.0385C13.7976 12.4193 13.7976 13.0366 13.4168 13.4174C13.0361 13.7982 12.4187 13.7982 12.038 13.4174L7.0531 8.43254L2.06834 13.4173Z" fill="#BCC7D2" class="svelte-1i8xma6">
-                                </path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+                <form action="https://search.brave.com/" method="GET" id="searchform" data-sveltekit-reload="" class="svelte-1i8xma6">
+                <div class="searchbox-wrapper svelte-1i8xma6"><input id="searchbox" type="text" class="form-input desktop-large-regular svelte-1i8xma6" placeholder="Search the web privately…" name="q" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Search" title="Search" aria-autocomplete="both" aria-haspopup="false" maxlength="2048" autofocus=""></div>
                 <input name="source" type="hidden" value="web">
                 <input name="" type="hidden" id="goggleQueryParam" value="">
-                <button id="submit-button" class="btn btn--filled input-group-btn svelte-1i8xma6" aria-label="Search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" class="icon" viewBox="0 0 18 17">
-                        <path fill-rule="evenodd" d="M1.6 7.336a5.736 5.736 0 1 1 11.471 0 5.736 5.736 0 0 1-11.471 0ZM7.336 0a7.336 7.336 0 1 0 4.957 12.743l3.56 3.561a.8.8 0 0 0 1.132-1.131l-3.636-3.636A7.336 7.336 0 0 0 7.335 0Z" clip-rule="evenodd">
-                        </path>
-                    </svg>
-                </button>
             </form>
             <div id="autocomplete" class="svelte-1i8xma6">
             </div>
