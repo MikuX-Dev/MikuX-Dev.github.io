@@ -101,16 +101,11 @@ aside svg { height: 4.5rem; }
 
 #dock li:nth-child(1) a:focus, /* Gmail */
 #dock li:nth-child(2) a:focus, /* protonmail */
-#dock li:nth-child(3) a:focus,
-#dock li:nth-child(3) a:hover { fill: hsl(217, 89%, 61%); } /* Google Calendar */
-#dock li:nth-child(4) a:focus,
-#dock li:nth-child(4) a:hover { fill: hsl(44, 100%, 50%); } /* Google Keep */
-#dock li:nth-child(5) a:focus,
-#dock li:nth-child(5) a:hover { fill: var(--primary-link-hover-color); } /* Notion */
-#dock li:nth-child(6) a:focus,
-#dock li:nth-child(6) a:hover { fill: var(--primary-link-hover-color); } /* Github */
-#dock li:nth-child(7) a:focus,
-#dock li:nth-child(7) a:hover { fill: hsl(14, 89%, 53%); } /* Figma */
+#dock li:nth-child(3) a:focus, /* Google Calendar */
+#dock li:nth-child(4) a:focus, /* Google Keep */
+#dock li:nth-child(5) a:focus, /* Notion */
+#dock li:nth-child(6) a:focus, /* Github */
+#dock li:nth-child(7) a:focus, /* Figma */
 
 #dock svg { height: 1.5rem; }
 
