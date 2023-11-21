@@ -102,7 +102,6 @@ aside svg { height: 4.5rem; }
 #dock li:nth-child(1) a:focus,
 #dock li:nth-child(1) a:hover { fill: hsl(5, 81%, 56%); } /* Gmail */
 #dock li:nth-child(2) a:focus,
-#dock li:nth-child(2) a:hover { fill: hsl(258, 81%, 56%); } /* protonmail */
 #dock li:nth-child(3) a:focus,
 #dock li:nth-child(3) a:hover { fill: hsl(217, 89%, 61%); } /* Google Calendar */
 #dock li:nth-child(4) a:focus,
