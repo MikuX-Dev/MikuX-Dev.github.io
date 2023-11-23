@@ -36,14 +36,9 @@
                 </ul>
             </nav>
             <section id="search">
-                <form action="https://search.brave.com/search" method="GET" id="searchform" data-sveltekit-reload="" class="svelte-1i8xma6">
-                <div class="searchbox-wrapper svelte-1i8xma6"><input id="searchbox" type="text" class="form-input desktop-large-regular svelte-1i8xma6" placeholder="Search the web privately…" name="q" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Search" title="Search" aria-autocomplete="both" aria-haspopup="false" autofocus=""></div>
-                <input name="source" type="hidden" value="web">
-                <input name="" type="hidden" id="goggleQueryParam" value="">
+                <form action="https://search.brave.com/search" method="GET">
+                    <input id="searchbox" type="text" id="q" placeholder="Search the web privately…" name="q" autofocus>
             </form>
-            <div id="autocomplete" class="svelte-1i8xma6">
-            </div>
-                <ul id="search-suggestions" role="listbox" aria-label="Search suggestions"></ul>
             </section>
             <section id="bookmarks">
                 <h2 class="sr-only">Bookmarks</h2>
